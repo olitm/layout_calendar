@@ -1,10 +1,8 @@
 .calendar {
   display: flex;
-  box-sizing: border-box;
-
   flex-wrap: wrap;
   gap: $cell-gap;
-  
+  box-sizing: border-box;
   width: $calendar-wrap-width;
   padding: 0 $calendar-horizontal-indentation;
 
