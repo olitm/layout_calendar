@@ -32,8 +32,8 @@
 
     &:hover {
       cursor: pointer;
-      background-color: $cell-hover-background;
       transform: translateY(-20px);
+      background-color: $cell-hover-background;
     }
   }
 
