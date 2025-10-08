@@ -14,5 +14,12 @@ $start-days: (
   sat: 5,
   sun: 6,
 );
-$total-days: 29;
-$calendar-wrap-width: calc($cell-width * $days) + 6;
+$default-month-length: 31;
+$calendar-wrap-width: calc(
+  ($cell-width * $days) + ($cell-gap * ($days - 1)) + 10px
+);
+$calendar-horizontal-indentation: 5px;
+$cell-font-family: Arial, sans-serif;
+$cell-text-size: 30px;
+$transition-duration: 0.5s;
+$hover-offset: translateY(-20px);
