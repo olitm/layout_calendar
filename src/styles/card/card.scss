@@ -1,6 +1,6 @@
 .calendar {
-  box-sizing: border-box;
   display: flex;
+  box-sizing: border-box;
   flex-wrap: wrap;
   gap: $cell-gap;
   width: $calendar-wrap-width;
@@ -10,15 +10,14 @@
     display: block;
 
     @include cells-size(
-      $cell-width,
-      $cell-height,
-      $cell-background,
-      $cell-border-color
+        $cell-width,
+        $cell-height,
+        $cell-background,
+        $cell-border-color
     );
 
-    transition:
-      transform $transition-duration,
-      background-color $transition-duration;
+    transition: transform $transition-duration,
+    background-color $transition-duration;
 
     @for $i from 1 through $default-month-length {
       &:nth-child(#{$i})::before {
